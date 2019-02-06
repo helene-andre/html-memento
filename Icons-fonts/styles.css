@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "html-momentum";
+  src:url("fonts/html-momentum.eot");
+  src:url("fonts/html-momentum.eot?#iefix") format("embedded-opentype"),
+    url("fonts/html-momentum.woff") format("woff"),
+    url("fonts/html-momentum.ttf") format("truetype"),
+    url("fonts/html-momentum.svg#html-momentum") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "html-momentum" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "html-momentum" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-html5:before {
+  content: "\61";
+}
+.icon-brush:before {
+  content: "\62";
+}
+.icon-user-add:before {
+  content: "\63";
+}
+.icon-color-palette:before {
+  content: "\64";
+}

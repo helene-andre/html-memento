@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css"/>
+		<title>HTML Memento</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="JS/HTMLMementoJS.js"></script>
+	</head>
+
+	<body class="default-theme">
+
+		<div class="page-header">
+
+			<div class="icons-top-right">
+				<form>
+					<div class="icon icon-user-add button" id="register-button" for="register-checkbox">
+					</div>
+
+					<div id="register-wrapper" class="register-container container">
+						<div id="register-title">
+							REGISTER HERE!
+						</div>
+
+						<div id="personal-information">
+							<form action="_blank">
+								<input type="text" name="last-name" placeholder="Last Name" autocomplete="off" >				
+								<input type="text" name="first-name" placeholder="First Name" autocomplete="off" >				
+								<input type="text" name="DOB" placeholder="dd/mm/yyyy" autocomplete="off" >				
+								<input type="text" name="email" placeholder="Email" autocomplete="off" >				
+								<input type="text" name="phone-number" placeholder="Phone Number" autocomplete="off" id="phone-number">
+							  <input type="reset" value="Reset" class="reset">
+							  <input type="submit" value="Submit" class="submit">
+							</form>				
+						</div>
+
+						<div id="CivilGender">
+							<form>
+							<select id="civil">
+								<option>Mr.</option>
+								<option>Mrs.</option>
+								<option>Ms.</option>
+							</select> 					
+								<input type="radio" name="gender" value="female" id="female"> 
+								<label class="female" for="female"> Female</label>
+								<input type="radio" name="gender" value="male" id="male">
+								<label class="male" for="male"> Male</label>
+							</form>
+						</div>
+
+						<div id="terms-conditions-wrapper">
+							<form>
+								<input  type="checkbox" name="terms-conditions">
+								<label id="terms-conditions">Terms & Conditions</label> 					
+							</form>
+						</div>
+					</div>
+				</form>	
+
+		    <div id="color-button" class="icon icon-color-palette"></div>
+	      <div id="color-options-wrapper">
+					<input type="button" class="color-btn" id="salmon" onclick="changeTheme('salmon')">
+					<input type="button" class="color-btn" id="blue" onclick="changeTheme('blue')">
+					<input type="button" class="color-btn" id="green" onclick="changeTheme('green')">
+	        <input type="button" class="color-btn" id="default" onclick="changeTheme('default')">
+				</div>	
+		    				
+			</div>
+
+			<h1 class="main-title">ÌHTML'MEMENTOÍ</h1>
+
+			<div id="menu-btn-wrapper">
+				<a class="menu-btn active" href="#section-1" onclick="changeStatus(this)">FIRST LEVEL TAGS</a>
+				<a class="menu-btn" href="#section-2" onclick="changeStatus(this)">HEADER TAGS</a>
+				<a class="menu-btn" href="#section-3" onclick="changeStatus(this)">TEXT STRUCTURING TAGS</a>
+				<a class="menu-btn" href="#section-4" onclick="changeStatus(this)">LIST TAGS</a>
+				<a class="menu-btn" href="#section-5" onclick="changeStatus(this)">TABLE TAGS</a>
+				<a class="menu-btn" href="#section-6" onclick="changeStatus(this)">FORM TAGS</a>
+				<a class="menu-btn" href="#section-7" onclick="changeStatus(this)">SECTION TAGS</a>
+				<a class="menu-btn" href="#section-8" onclick="changeStatus(this)">GENERIC TAGS</a>			
+			</div>
+		</div>
+
+		<div id="table-wrapper">
+			
+			<div id="section-1">
+				<i class="icon icon-html5"></i>
+				<h2 class="section">First Level Tags</h2>
+			</div>			
+			
+			<div class="table">
+				<table>
+					<tr>
+						<th class="column1">Tag</th>
+						<th class="column2">Desciption</th>
+						<th class="column3">Example</th>
+					</tr>
+
+					<tr>
+						<td>&lt;html&gt;</td>
+						<td>Main tag</td>
+						<td><pre>&lt;html&gt;<br/>&lt;/html&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;head&gt;</td>
+						<td>Page header</td>
+            <td><pre>&lt;head&gt;<br/>&lt;/head&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;body&gt;</td>
+						<td>Page body</td>
+            <td><pre>&lt;body&gt;<br/>&lt;/body&gt;</pre></td>
+					</tr>
+				</table>			
+			</div>
+
+			<div id="section-2">
+				<i class="icon icon-html5"></i>
+				<h2 class="section">Header Tags</h2>
+			</div>	
+			<div class="table">
+				<table>
+					<tr>
+						<th class="column1">Tag</th>
+						<th class="column2">Desciption</th>
+						<th class="column3">Example</th>
+					</tr>
+
+					<tr>
+						<td>&lt;link&gt;</td>
+						<td>Link with a style</td>
+            <td><pre>&lt;link rel="stylesheet" href="style.css"/&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;meta&gt;</td>
+						<td>Web page metadata</td>
+						<td><pre>&lt;meta charset="utf-8" /&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;title&gt;</td>
+						<td>Title of the HTML page</td>
+						<td><pre>&lt;title&gt;This is the tittle of the HTML page&lt;/title&gt;</pre></td>
+					</tr>
+				</table>			
+			</div>
+
+			<div id="section-3">
+				<i class="icon icon-html5"></i>
+				<h2 class="section">Text Structuring Tags</h2>
+			</div>	
+			<div class="table">
+				<table>
+					<tr>
+						<th class="column1">Tag</th>
+						<th class="column2">Desciption</th>
+						<th class="column3">Example</th>
+					</tr>
+
+					<tr>
+						<td>&lt;strong&gt;</td>
+						<td>Strong highlighting</td>
+						<td><pre>&lt;strong&gt;<strong>strong highlighting</strong>&lt;/strong&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;em&gt;</td>
+						<td>Normal highlighting</td>
+            <td><pre>&lt;em&gt;<em>Normal highlighting</em>&lt;/em&gt;</pre></td>    
+ 					</tr>
+
+					<tr>
+						<td>&lt;h1&gt;</td>
+						<td>Level 1 title</td>
+						<td><pre>&lt;h1&gt;<h1>Level 1 title</h1>&lt;/h1&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;h2&gt;</td>
+						<td>Level 2 title</td>
+						<td><pre>&lt;h2&gt;<h2>Level 2 title</h2>&lt;/h2&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;h3&gt;</td>
+						<td>Level 3 title</td>
+						<td><pre>&lt;h3&gt;<h3>Level 3 title</h3>&lt;/h3&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;h4&gt;</td>
+						<td>Level 4 title</td>
+						<td><pre>&lt;h4&gt;<h4>Level 4 title</h4>&lt;/h4&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;h5&gt;</td>
+						<td>Level 5 title</td>
+						<td><pre>&lt;h5&gt;<h5>Level 5 title</h5>&lt;/h5&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;h6&gt;</td>
+						<td>Level 6 title</td>
+						<td><pre>&lt;h6&gt;<h6>Level 6 title</h6>&lt;/h6&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;img&gt;</td>
+						<td>Image</td>
+						<td><pre>&lt;img src="dossier/fichier.jpg"&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;a&gt;</td>
+						<td>Hypertext link</td>
+						<td><pre>&lt;a href="link">hypertext link&lt;/a&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;br/&gt;</td>
+						<td>Line feed</td>
+						<td><pre>&lt;br/&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;p&gt;</td>
+						<td>Paragraph</td>
+						<td><pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre></td>
+					</tr>
+				</table>			
+			</div>			
+
+			<div id="section-4">
+				<i class="icon icon-html5"></i>
+				<h2 class="section">List Tags</h2>
+			</div>	
+			<div class="table">
+				<table>
+					<tr>
+						<th class="column1">Tag</th>
+						<th class="column2">Desciption</th>
+						<th class="column3">Example</th>
+					</tr>
+
+					<tr>
+						<td>&lt;ul&gt;</td>
+						<td>Unordered bullet lists</td>
+						<td>
+							<pre>&lt;ul&gt;<br/>  &lt;li&gt;element 1&lt;/li&gt;<br/>  &lt;li&gt;element 2&lt;/li&gt;<br/>  &lt;li&gt;element 3&lt;/li&gt;<br/>&lt;/ul&gt;
+							</pre>
+						</td>
+					</tr>
+
+					<tr>
+						<td>&lt;ol&gt;</td>
+						<td>Numbered list</td>
+						<td>
+							<pre>&lt;ol&gt;<br/>  &lt;li&gt;element 1&lt;/li&gt;<br/>  &lt;li&gt;element 2&lt;/li&gt;<br/>  &lt;li&gt;element 3&lt;/li&gt;<br/>&lt;/ol&gt;</pre>
+						</td>
+					</tr>
+
+					<tr>
+						<td>&lt;li&gt;</td>
+						<td>Bulleted list item</td>
+						<td>
+							<pre>&lt;li&gt;element 1&lt;/li&gt;<br/>&lt;li&gt;element 2&lt;/li&gt;<br/>&lt;li&gt;element 3&lt;/li&gt;</pre>
+						</td>
+					</tr>
+				</table>			
+			</div>			
+
+			<div id="section-5">
+				<i class="icon icon-html5"></i>
+				<h2 class="section">Table Tags</h2>
+			</div>	
+			<div class="table">
+				<table>
+					<tr>
+						<th class="column1">Tag</th>
+						<th class="column2">Desciption</th>
+						<th class="column3">Example</th>
+					</tr>
+
+					<tr>
+						<td>&lt;table&gt;</td>
+						<td>Table</td>
+						<td><pre>&lt;table&gt;&lt;/table&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;tr&gt;</td>
+						<td>Table row</td>
+						<td><pre>&lt;tr&gt;&lt;/tr&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;th&gt;</td>
+						<td>Cell header</td>
+						<td><pre>&lt;th&gt;&lt;/th&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;td&gt;</td>
+						<td>Cell</td>
+						<td><pre>&lt;td&gt;&lt;/td&gt;</pre></td>
+					</tr>
+				</table>			
+			</div>
+
+			<div id="section-6">
+				<i class="icon icon-html5"></i>
+				<h2 class="section">Form Tags</h2>
+			</div>	
+			<div class="table">
+				<table>
+					<tr>
+						<th class="column1">Tag</th>
+						<th class="column2">Desciption</th>
+						<th class="column3">Example</th>
+					</tr>
+
+					<tr>
+						<td>&lt;form&gt;</td>
+						<td>Form</td>
+						<td><pre>&lt;form&gt;&lt;/form&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;label&gt;</td>
+						<td>Defines a label for an element such as:
+							<br/>- &lt;button&gt;
+							<br/>- &lt;input&gt; 
+							<br/>- &lt;meter&gt; 
+							<br/>- &lt;output&gt; 
+							<br/>- &lt;progress&gt;
+							<br/>- &lt;select&gt;
+							<br/>- &lt;textarea&gt;
+							<br/>When the user clicks on the text within the &lt;label&gt; element, it toggles the control. The for attribute of the &lt;label&gt;tag should be equal to the id attribute of the related element to bind them together.
+						</td>
+						<td>
+							<pre>&lt;label for="element-id"&gt;&lt;/label&gt;</pre>
+						</td>
+					</tr>
+
+					<tr>
+						<td>&lt;input&gt;</td>
+						<td>
+							Framed by form tag, the label tag specifies an input field where the user can enter data. It can vary in many ways depending on the attribute type: 
+							<br/>- button
+							<br/>- checkbox
+							<br/>- color
+							<br/>- date
+							<br/>- datetime-local
+							<br/>- email
+							<br/>- file
+							<br/>- hidden
+							<br/>- image
+							<br/>- month
+							<br/>- number
+							<br/>- password
+							<br/>- radio 
+							<br/>- range
+							<br/>- reset
+							<br/>- search
+							<br/>- submit
+							<br/>- tel
+							<br/>- text
+							<br/>- time
+							<br/>- url
+							<br/>- week
+						</td>
+						<td>
+							<pre>&lt;input type="button"&gt; <input type="button"></pre>
+							<pre>&lt;input type="checkbox"&gt; <input type="checkbox"></pre>
+							<pre>&lt;input type="color"&gt; <input type="color"></pre>
+							<pre>&lt;input type="date"&gt; <input type="date"></pre>																
+							<pre>&lt;input type="datetime-local"&gt; <input type="datetime-local"></pre>
+							<pre>&lt;input type="email"&gt; <input type="email"></pre>
+							<pre>&lt;input type="file"&gt; <input type="file"></pre>
+							<pre>&lt;input type="hidden"&gt; <input type="hidden">Yes I am here but you don't see me</pre>
+							<pre>&lt;input type="image" scr="image-address" &gt; <input type="image"></pre>
+							<pre>&lt;input type="month"&gt; <input type="month"></pre>
+							<pre>&lt;input type="number"&gt; <input type="number"></pre>
+							<pre>&lt;input type="password"&gt; <input type="password"></pre>
+							<pre>&lt;input type="radio"&gt; <input type="radio"></pre>
+							<pre>&lt;input type="range"&gt; <input type="range"></pre>
+							<pre>&lt;input type="reset"&gt; <input type="reset"></pre>
+							<pre>&lt;input type="search"&gt; <input type="search"></pre>
+							<pre>&lt;input type="sumit"&gt; <input type="submit"></pre>	
+							<pre>&lt;input type="tel"&gt; <input type="tel"></pre>
+							<pre>&lt;input type="text"&gt; <input type="text"></pre>
+							<pre>&lt;input type="time"&gt; <input type="time"></pre>
+							<pre>&lt;input type="url"&gt; <input type="url"></pre>
+							<pre>&lt;input type="week"&gt; <input type="week"></pre>
+						</td>
+					</tr>
+
+					<tr>
+						<td>&lt;textarea&gt;</td>
+						<td>Text field</td>
+						<td><pre>&lt;textarea&gt;&lt;textarea&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;select&gt;</td>
+						<td>list of options</td>
+						<td><pre>&lt;select&gt;&lt;select&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;option&gt;</td>
+						<td>new entry in an option list, framed by &lt;select&gt;</td>
+						<td>
+							<pre>&lt;select&gt;<br/>  &lt;option&gt;1&lt;/option&gt;<br/>  &lt;option&gt;2&lt;/option&gt;<br/>  &lt;option&gt;3&lt;/option&gt;<br/>  &lt;option&gt;4&lt;/option&gt;<br/>&lt;/select&gt;</pre>
+						</td>
+					</tr>					
+				</table>			
+			</div>
+
+			<div id="section-7">
+				<i class="icon icon-html5"></i>
+				<h2 class="section">Section Tags</h2>
+			</div>	
+			<div class="table">
+				<table>
+					<tr>
+						<th class="column1">Tag</th>
+						<th class="column2">Desciption</th>
+						<th class="column3">Example</th>
+					</tr>
+
+					<tr>
+						<td>&lt;header&gt;</td>
+						<td>Header</td>
+						<td><pre>&lt;header&gt;&lt;/header&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;footer&gt;</td>
+						<td>Page footer</td>
+						<td><pre>&lt;footer&gt;&lt;/footer&gt;</pre></td>
+					</tr>
+				</table>			
+			</div>
+
+			<div id="section-8">
+				<i class="icon icon-html5"></i>
+				<h2 class="section">Generic Tags</h2>
+			</div>	
+			<div class="table">
+				<table>
+					<tr>
+						<th class="column1">Tag</th>
+						<th class="column2">Desciption</th>
+						<th class="column3">Example</th>
+					</tr>
+
+					<tr>
+						<td>&lt;span&gt;</td>
+						<td>Inline generic tag</td>
+						<td><pre>&lt;span&gt;&lt;/span&gt;</pre></td>
+					</tr>
+
+					<tr>
+						<td>&lt;div&gt;</td>
+						<td>Block generic tag</td>
+						<td><pre>&lt;div&gt;&lt;/div&gt;</pre></td>
+					</tr>
+				</table>			
+			</div>
+		</div>
+	</body>
+</html>
