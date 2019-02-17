@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-/**==============================text fonts=============================**/
+/**============================= text fonts ============================**/
 @font-face {
   font-family: yorkwhiteletter;
   src: url(fonts/yorkwhiteletter/yorkwhiteletter.ttf);
@@ -15,7 +15,7 @@
 }
 /**=====================================================================**/
 
-/**============================icons fonts==============================**/
+/**=========================== icons fonts =============================**/
 @font-face {
   font-family: "html-momentum";
   src:url("fonts/icons-fonts/fonts/html-momentum.eot");
@@ -35,7 +35,6 @@
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,7 +47,6 @@
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -68,7 +66,7 @@
 }
 /**=====================================================================**/
 
-/**============================page-header==============================**/
+/**=========================== page-header =============================**/
 .page-header {
   position: fixed;
   width: 100%;
@@ -82,7 +80,7 @@
 .main-title {
   font-size: 4em;
   font-weight: normal;
-  margin-: 20px;
+  margin: 20px;
   position: absolute;
   top: 4%;
   left: 50%;
@@ -97,8 +95,9 @@
   top: 0%;
   right: 0%;
 }
-/**===================================================================**/
-/**===========================Register Button===========================**/
+/**=====================================================================**/
+
+/**========================== Register Button ==========================**/
 #register-button {
   font-size: 26px;
   position: absolute;
@@ -157,7 +156,7 @@
 }
 /**=====================================================================**/
 
-/**==========================Form Register==============================**/
+/**========================= Form Register =============================**/
 #personal-information {
   position: relative;
   top: 12%;
@@ -238,7 +237,7 @@ input:focus {
 }
 /**===================================================================**/
 
-/**===============================color-btn===========================**/
+/**============================== color-btn ==========================**/
 #color-button {
   width: 35px; 
   height: 35px;
@@ -296,6 +295,7 @@ input:focus {
 .color-btn {
   width: 25px;
   height: 25px;
+  padding: 14px;
   opacity: 0.7;
   outline: none;
   border: none;
@@ -335,7 +335,7 @@ input:focus {
 }
 /**=====================================================================**/
 
-/**=============================main menu===============================**/
+/**============================ main menu  =============================**/
 #menu-btn-wrapper {
   background-color: transparent;
   width: 80%;
@@ -421,6 +421,7 @@ th {
 td {
   background-color: white;
 }
+
 .column1 {
 	width: 200px; 
 }
@@ -434,76 +435,77 @@ td {
 }
 /**=====================================================================**/
 
-/**=========================Hide Show Popup=============================**/
-
+/**======================== Hide Show Popup ============================**/
 .hide {
   display: none;
 }
 /**=====================================================================**/
 
-
-
 /**============================= THEMES ================================**/
-.default-theme .main-title, .default-theme .section, .default-theme a {
+.default-theme .main-title, 
+.default-theme .section, 
+.default-theme a {
   color: #182153;
-  transition: all 0.3s ease-in-out;
-
+  transition: 0.3s ease-in-out;
 }
 
 .default-theme th {
-  background-color: : #182153;
-  transition: all 0.3s ease-in-out;
+  background-color: #182153;
+  transition: 0.3s ease-in-out;
 }
 
 .default-theme input:focus {
   border-bottom: 1px solid #182153;
 }
 
-.salmon-theme .main-title, .salmon-theme .section, .salmon-theme a {
+.salmon-theme .main-title, 
+.salmon-theme .section, 
+.salmon-theme a {
   color: #ff8c69;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .salmon-theme th {
   background-color: #ff8c69;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .salmon-theme input:focus {
-  border-bottom1 solid #ff8c69;
+  border-bottom: 1px solid #ff8c69;
 }
 
-.blue-theme .main-title, .blue-theme .section, .blue-theme a {
+.blue-theme .main-title, 
+.blue-theme .section, 
+.blue-theme a {
   color: #5bc0de;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .blue-theme th {
   background-color: #5bc0de;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .blue-theme input:focus {
   border-bottom: 1px solid #5bc0de;
 }
 
-.green-theme .main-title, .green-theme .section, .green-theme a {
+.green-theme .main-title, 
+.green-theme .section, 
+.green-theme a {
   color: #4CA64C;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .green-theme th {
   background-color: #4ca64c;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .green-theme input:focus {
   border-bottom: 1px solid #4ca64c;
 }
 /**=====================================================================**/
-
-
-
 
 
 
