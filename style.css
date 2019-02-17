@@ -16,15 +16,13 @@
 /**=====================================================================**/
 
 /**============================icons fonts==============================**/
-@charset "UTF-8";
-
 @font-face {
   font-family: "html-momentum";
-  src:url("icons-fonts/fonts/html-momentum.eot");
-  src:url("icons-fonts/fonts/html-momentum.eot?#iefix") format("embedded-opentype"),
-    url("icons-fonts/fonts/html-momentum.woff") format("woff"),
-    url("icons-fonts/fonts/html-momentum.ttf") format("truetype"),
-    url("icons-fonts/fonts/html-momentum.svg#html-momentum") format("svg");
+  src:url("fonts/icons-fonts/fonts/html-momentum.eot");
+  src:url("fonts/icons-fonts/fonts/html-momentum.eot?#iefix") format("embedded-opentype"),
+    url("fonts/icons-fonts/fonts/html-momentum.woff") format("woff"),
+    url("fonts/icons-fonts/fonts/html-momentum.ttf") format("truetype"),
+    url("fonts/icons-fonts/fonts/html-momentum.svg#html-momentum") format("svg");
   font-weight: normal;
   font-style: normal;
 
